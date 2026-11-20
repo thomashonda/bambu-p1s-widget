@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="4dp"
+        android:paddingBottom="6dp"
+        android:text="P1S · Pronto"
+        android:textColor="#CCFFFFFF"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_load_pla" style="@style/WBtn"
+            android:background="@drawable/btn_load" android:text="Load\nPLA" />
+        <Button android:id="@+id/btn_load_petg" style="@style/WBtn"
+            android:background="@drawable/btn_load" android:text="Load\nPETG" />
+        <Button android:id="@+id/btn_unload" style="@style/WBtn"
+            android:background="@drawable/btn_unload" android:text="Unload" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_n02" style="@style/WBtn"
+            android:background="@drawable/btn_nozzle" android:text="0.2" />
+        <Button android:id="@+id/btn_n04" style="@style/WBtn"
+            android:background="@drawable/btn_nozzle" android:text="0.4" />
+        <Button android:id="@+id/btn_n06" style="@style/WBtn"
+            android:background="@drawable/btn_nozzle" android:text="0.6" />
+    </LinearLayout>
+</LinearLayout>
